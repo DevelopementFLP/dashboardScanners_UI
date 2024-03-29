@@ -1,0 +1,30 @@
+@import "../../../../node_modules/primeicons/primeicons.css";
+
+.navBar {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.scrolled {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.searchArea {
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.searchArea:hover {
+    cursor: pointer;
+    background-color: rgba(0, 136, 255, 0.1);
+}
+
+.volver:hover {
+    cursor: pointer;
+}

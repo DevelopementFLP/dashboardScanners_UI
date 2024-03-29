@@ -1,0 +1,22 @@
+<div class="card">
+    <p-card
+        class="datos"
+        [header]="data![0].codigo">
+        <p-timeline [value]="pasos" align="start" styleClass="customized-timeline">
+            <ng-template pTemplate="marker" let-event let-i="index">
+                <span class="custom-marker shadow-2 marcador" [style.backgroundColor]="event.color">
+                    <small>{{pasos.indexOf(event) + 1}}</small>
+                </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-event>
+                <small class="p-text-secondary"><span class="titulo__dato">Ubicación:&nbsp;</span>{{ event.ubicacion }}</small><br>
+                <small class="p-text-secondary"><span class="titulo__dato">Dispositivo:&nbsp;</span>{{ event.dispositivo }}</small><br>
+                <small class="p-text-secondary"><span class="titulo__dato">IP:&nbsp;</span>{{ event.ip }}</small><br>
+                <small class="p-text-secondary"><span class="titulo__dato">Puerto:&nbsp;</span>{{ event.puerto }}</small><br>
+            </ng-template>
+            <ng-template pTemplate="opposite" let-event>
+                <span class="text__fecha">{{ event.fecha }}</span>
+            </ng-template>
+        </p-timeline>
+    </p-card>
+</div>

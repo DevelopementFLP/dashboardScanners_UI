@@ -1,0 +1,8 @@
+@import "../../../../node_modules/primeflex/primeflex.min.css";
+
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}

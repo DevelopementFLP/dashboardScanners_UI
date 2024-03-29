@@ -1,0 +1,33 @@
+.data {
+    font-size: 2.2rem;
+    margin-left: 15px !important;
+}
+
+.error {
+    background-color: #FADBD8;
+    color: #E74C3C;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.regular {
+    background-color: #FCF3CF;
+    color: #FFC300;
+    font-weight: bold;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.ok {
+    background-color: #D1F2EB;
+    color: #2ECC71;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+@media (min-width:1200px) and (max-width:1470px) {
+    .data {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}

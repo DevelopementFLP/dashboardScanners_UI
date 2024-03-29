@@ -1,0 +1,22 @@
+@import "../../../../node_modules/primeflex/primeflex.min.css";
+@import "../../../../node_modules/primeicons/primeicons.css";
+
+.navBar {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.scrolled {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:620px) {
+    .navBar {
+        display: flex;
+        flex-direction: column;
+    }
+}

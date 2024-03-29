@@ -1,0 +1,17 @@
+.titulo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.borde {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+@media (max-width:375px) {
+    :host ::ng-deep .p-card .p-card-header {
+        font-size: 0.8rem;
+    }
+}

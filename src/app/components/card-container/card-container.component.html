@@ -1,0 +1,7 @@
+<div [routerLink]="['/scan', dispositivo]" class="flex flex-column cardContainer" style="background-color: #85C1E9; border-radius: 5px; height: 350px;">
+    <div class="titulo">{{dispositivo}}</div>
+    <div class="flex flex-row">
+        <div class="col-6"><app-card [data]="dayData" timeLapse="Hoy"></app-card></div>
+        <div class="col-6"><app-card [data]="weekData" timeLapse="Semanal"></app-card></div>
+    </div>
+</div>

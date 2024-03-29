@@ -1,0 +1,33 @@
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.text__fecha {
+    color: #0088FF;
+}
+
+.titulo__dato {
+    font-weight: bold;
+}
+
+.datos {
+    margin-bottom: 2rem;
+}
+
+.marcador {
+    color: white;
+    padding: 0.2rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

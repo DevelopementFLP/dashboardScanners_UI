@@ -1,0 +1,30 @@
+<div [style]="{background: '#fff', color: '#000', height: '300px'}" class="custom-card">
+    <div class="flex flex-column h-12rem justify-content-between">
+        <div class="flex align-items-center justify-content-center text-lg">
+            <p class="textTime">{{timeLapse}}</p>
+        </div>
+        <app-data-viewer 
+            [data]="data ? data.ok : 0" 
+            titulo="Correctas"  
+            class="flex align-items-start justify-content-center h-4rem pl-1 mb-5" 
+            style="background-color: #fff;"
+            [porcentaje]="false">
+        </app-data-viewer>
+        
+        <app-data-viewer 
+            [data]="data ? data.noRead : 0"     
+            titulo="Error"      
+            class="flex align-items-start justify-content-center h-4rem pl-1 mb-5" 
+            style="background-color: #fff;"
+            [porcentaje]="false">
+        </app-data-viewer>
+        
+        <app-data-viewer 
+            [data]="data ? (data!.ok / (data!.noRead + data!.ok)) * 100 : 0" 
+            titulo="% Ratio Lecturas" 
+            class="flex align-items-start justify-content-center h-4rem pl-1 ratio" 
+            style="background-color: #fff;"
+            [porcentaje]="true">
+        </app-data-viewer>
+    </div>
+</div>
