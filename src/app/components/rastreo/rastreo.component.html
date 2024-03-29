@@ -7,7 +7,7 @@
     <div class="flex flex-row align-items-center gap-3">
         <span class="p-input-icon-left">
             <i class="pi pi-search" style="line-height: 0; vertical-align: middle;"></i>
-            <input #txtBuscar pInputText type="text" class="p-inputtext-sm" (keydown.enter)="rastrearCaja()" [(ngModel)]="barcode" />
+            <input (focus)="seleccionarTexto($event)" #txtBuscar pInputText type="text" class="p-inputtext-sm" (keydown.enter)="rastrearCaja()" [(ngModel)]="barcode" />
         </span>
         <p-button label="Buscar" [text]="true" [raised]="true" size="small" (onClick)="rastrearCaja()"></p-button>
     </div>
@@ -19,7 +19,6 @@
     </ng-container>
 
     <ng-container *ngIf="hayData">
-        <rastreo-detail [data]="data?.data" />
+        <rastreo-detail [data]="data?.data" [barcode]="barcode" />
     </ng-container>
-
 </div>

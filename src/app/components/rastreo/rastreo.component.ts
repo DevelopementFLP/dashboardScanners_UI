@@ -17,7 +17,9 @@ export class RastreoComponent implements OnInit, AfterViewInit {
   constructor(
     private router: Router,
     private dashService: DashboardService
-    ) {}
+    ) {
+      this.data = undefined;
+    }
 
   ngOnInit(): void {
     
@@ -43,8 +45,6 @@ export class RastreoComponent implements OnInit, AfterViewInit {
   }
 
   rastrearCaja() {
-    this.data = undefined;
-    console.log(this.barcode);
     if(this.barcode === '') return;
 
     this.dashService.getRastreoCaja(this.barcode)
@@ -52,5 +52,10 @@ export class RastreoComponent implements OnInit, AfterViewInit {
         this.data = data;
         this.hayData = this.data.data.length > 0;
       })
+  }
+
+  seleccionarTexto(event: FocusEvent): void {
+    const inputElement = event.target as HTMLInputElement;
+    inputElement.select();
   }
 }
