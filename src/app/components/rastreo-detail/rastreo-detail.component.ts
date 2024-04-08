@@ -25,7 +25,6 @@ export class RastreoDetailComponent implements OnInit, OnChanges{
 
   ngOnChanges(changes: SimpleChanges): void {
     if(changes['data'] && changes['data'].currentValue !== undefined) {
-      console.log(changes['data'])
       this.data = changes['data'].currentValue;
       this.mapearItems(this.data!);
     }
