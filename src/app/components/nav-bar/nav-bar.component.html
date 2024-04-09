@@ -1,6 +1,7 @@
 <div class="flex flex-row justify-content-between align-items-center navBar">
     <div class="flex flex-row align-items-center gap-2">
-        <i class="volver" class="pi pi-angle-left" (click)="goBack()"></i>
+        <i class="volver" class="pi pi-angle-left" (click)="goBack()" *ngIf="!enMain"></i>
+        <i class="volver" pTooltip="Ir al inicio de SIR" class="pi pi-home" (click)="goSIR()" *ngIf="enMain"></i>
         <div class="text-4xl">Dashboard Scanners</div>
     </div>
 

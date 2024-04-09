@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent {
 
+  @Input() enMain!: boolean;
   barcode: string = '';
 
   constructor(private router: Router) {}
@@ -29,5 +30,9 @@ export class NavBarComponent {
 
   goToRastreo(): void {
     this.router.navigate(['rastreo']);
+  }
+
+  goSIR() {
+    window.location.href = "http://192.168.0.107:83"
   }
 }

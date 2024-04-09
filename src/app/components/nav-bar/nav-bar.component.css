@@ -25,6 +25,15 @@
     background-color: rgba(0, 136, 255, 0.1);
 }
 
+i.volver:hover,
 .volver:hover {
     cursor: pointer;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+i {
+    font-size: 2rem;
 }

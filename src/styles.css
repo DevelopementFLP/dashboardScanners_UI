@@ -31,3 +31,7 @@ body {
 p-chart > div > canvas {
     height: 750px;
 }
+
+i:hover {
+    color: #3498DB;
+}

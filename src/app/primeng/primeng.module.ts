@@ -7,6 +7,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { MessagesModule } from 'primeng/messages';
 import { TimelineModule } from 'primeng/timeline';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   exports: [
@@ -15,7 +16,8 @@ import { TimelineModule } from 'primeng/timeline';
     InputTextModule,
     ButtonModule,
     MessagesModule,
-    TimelineModule
+    TimelineModule,
+    TooltipModule
   ]
 })
 export class PrimengModule { }
