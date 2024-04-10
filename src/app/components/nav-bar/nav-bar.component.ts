@@ -33,6 +33,6 @@ export class NavBarComponent {
   }
 
   goSIR() {
-    window.location.href = "http://192.168.0.107:83"
+    parent.location.href = "http://192.168.0.107:83"
   }
 }
