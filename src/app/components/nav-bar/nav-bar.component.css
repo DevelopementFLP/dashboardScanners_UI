@@ -1,12 +1,11 @@
-@import "../../../../node_modules/primeicons/primeicons.css";
-
 .navBar {
     height: 80px;
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: #fff;
-    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .scrolled {
@@ -35,5 +34,5 @@ i:hover{
 }
 
 i {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }

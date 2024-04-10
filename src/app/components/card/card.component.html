@@ -6,25 +6,22 @@
         <app-data-viewer 
             [data]="data ? data.ok : 0" 
             titulo="Correctas"  
-            class="flex align-items-start justify-content-center h-4rem pl-1 mb-5" 
+            class="flex align-items-start justify-content-center h-4rem pl-1 mb-4" 
             style="background-color: #fff;"
-            [porcentaje]="false">
-        </app-data-viewer>
+            [porcentaje]="false"/>
         
         <app-data-viewer 
             [data]="data ? data.noRead : 0"     
             titulo="Error"      
-            class="flex align-items-start justify-content-center h-4rem pl-1 mb-5" 
+            class="flex align-items-start justify-content-center h-4rem pl-1 mb-4" 
             style="background-color: #fff;"
-            [porcentaje]="false">
-        </app-data-viewer>
+            [porcentaje]="false"/>
         
         <app-data-viewer 
             [data]="data ? (data!.ok / (data!.noRead + data!.ok)) * 100 : 0" 
             titulo="% Ratio Lecturas" 
             class="flex align-items-start justify-content-center h-4rem pl-1 ratio" 
             style="background-color: #fff;"
-            [porcentaje]="true">
-        </app-data-viewer>
+            [porcentaje]="true"/>
     </div>
 </div>

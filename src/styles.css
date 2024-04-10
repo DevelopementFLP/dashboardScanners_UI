@@ -35,3 +35,7 @@ p-chart > div > canvas {
 i:hover {
     color: #3498DB;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
