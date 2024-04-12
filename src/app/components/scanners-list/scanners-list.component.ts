@@ -154,7 +154,6 @@ export class ScannersListComponent implements OnInit {
 
   private getLecturas(lecturas: RatioResponse): number[] {
     const datos: number[] = [];
-    console.log(lecturas.data)
     lecturas.data.forEach(lect => {
       datos.push(lect.ok + lect.noRead)
     })
@@ -176,7 +175,4 @@ export class ScannersListComponent implements OnInit {
     })
     return datos;
   }
-
-
-
 }

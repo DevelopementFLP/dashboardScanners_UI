@@ -1,3 +1,6 @@
+@import "./../node_modules/primeflex/primeflex.min.css";
+@import "./../node_modules/primeicons/primeicons.css";
+
 *{
     margin: 0;
 }
