@@ -10,4 +10,6 @@ export class DataViewerComponent {
   @Input() data: number = 0;
 
   @Input() porcentaje: boolean = false;
+
+
 }

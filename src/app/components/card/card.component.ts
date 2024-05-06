@@ -1,4 +1,4 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, HostListener, Input, input } from '@angular/core';
 import { RatioResponse } from '../../interfaces/RatioResponse.interface';
 import { RatioErrorResponse } from '../../interfaces/RatioErrorResponse.interface';
 
@@ -14,4 +14,5 @@ export class CardComponent {
 
   @Input() timeLapse: string = "";
   @Input() data?: RatioErrorResponse;
+
 }

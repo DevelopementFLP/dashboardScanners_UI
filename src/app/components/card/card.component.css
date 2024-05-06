@@ -3,15 +3,6 @@
     font-size: 36px;  
 } */
 
-:host ::ng-deep .p-card .p-card-subtitle { 
-    color: #FFFFFF; 
-    font-size: 1.1rem;  
-}
-
-:host ::ng-deep .p-card .p-card-body {
-    padding: 2px;
-}
-
 :host ::ng-deep .p-card .p-card-content{
     padding: 0;
 }
@@ -22,7 +13,7 @@
 }
 
 .ratio {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .custom-card {
@@ -30,5 +21,18 @@
 }
 
 .textTime {
-    color: gray;
+    color: #645A55;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.data--container {
+    width: 100%;
+}
+
+/* media queries */
+@media (max-width:991px) {
+    .main {
+        justify-content: space-evenly;
+    }
 }

@@ -1,8 +1,9 @@
 <div [style]="{background: '#fff', color: '#000', height: '300px'}" class="custom-card">
-    <div class="flex flex-column h-12rem justify-content-between">
+    <div class="flex flex-column h-12rem justify-content-between data--container">
         <div class="flex align-items-center justify-content-center text-lg">
             <p class="textTime">{{timeLapse}}</p>
         </div>
+       
         <app-data-viewer 
             [data]="data ? data.ok : 0" 
             titulo="Correctas"  

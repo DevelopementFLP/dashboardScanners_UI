@@ -5,4 +5,14 @@
 .main {
     background: #D6DBDFff;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* media queries */
+@media (max-width:991px) {
+    .main {
+        justify-content: space-evenly;
+    }
 }

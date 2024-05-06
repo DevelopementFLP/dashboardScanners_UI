@@ -14,8 +14,22 @@
     box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
-@media (max-width: 1880px) {
-    .titulo {
-        font-size: 1.0rem;
-    }
+
+:host ::ng-deep .p-card .p-card-subtitle { 
+    font-weight: 600; 
+    font-size: 1rem;
+    background-color: #665D53;
+    color: #ffffff;
+    margin-top: 0 !important;
+    padding: 0.2rem;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+:host ::ng-deep .p-card .p-card-body {
+    padding: 0;
+}
+
